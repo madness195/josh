@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="about-us.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+
+            <ul class="ul_header">
+                <li class="li_header">
+                    <a href="/samples">home</a>
+                </li>
+                <li class="li_header">
+                    <a href="/samples/pages/about-us.html">about us</a>
+                </li>
+            </ul>
+
+
+
+            <div class="main">
+                <h1>Test Site</h1>
+                <hr />
+            </div>
+
+        </div>
+    </header>
+
+    <!-- the sidenav -->
+
+
+    <div id="main" style="min-height: 100vh; padding-top: 215px">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+        </div>
+
+        <div class="container">
+
+            <aside class="aside" style="float: left">
+                aside
+            </aside>
+
+            <section class="section" style="float: right">
+                section
+            </section>
+
+        </div>
+    </div>
+
+
+    <!-- ending content -->
+
+    <footer class="footer">
+        <div class="container">
+            <br />
+            <a href="emailto:joshua@peacocksunited.co.uk">
+                <em>contact me</em>
+            </a>
+            <p>joshua@peacocksunited.co.uk
+                <br />dont do it</p>
+
+        </div>
+    </footer>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginleft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0px";
+            document.getElementById("main").style.marginleft = "0px";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+
+</html>
